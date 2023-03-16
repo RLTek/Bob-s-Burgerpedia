@@ -18,7 +18,7 @@ function Home() {
       <Navbar />
       <img id="banner" src={banner} alt="banner" />
       <div id="home-page">
-        <h2>Welcome to Bob's BurgerPedia!</h2>
+        <h2>Welcome to Bob's Burgerpedia!</h2>
         <p>Information on all of your favorite Bob's Burgers episodes, characters and more!</p>
       </div>
       <Burger />
