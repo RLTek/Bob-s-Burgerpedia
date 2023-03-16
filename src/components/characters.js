@@ -17,7 +17,7 @@ export default function Characters() {
 
 
     const characterList = characters?.map(character => <div id="character-cards" key={character.id}>
-        <Link>
+        <Link to={`/character/${character.id}`}>
         <img src={character.image} alt="character" id="character-images"/>
         <p>{character.name}</p>
         </Link>

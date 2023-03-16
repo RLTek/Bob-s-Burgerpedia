@@ -14,12 +14,23 @@
 #character-cards{
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
+    border: 4px solid red;
     align-items: center;
+    justify-content: center;
     width: 12em;
     height: 15em;
+    background-color: white;
 }
 
 #characters-page{
     text-align: center;
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
 }
+
+header{
+    background-color: white;
+}
+
+

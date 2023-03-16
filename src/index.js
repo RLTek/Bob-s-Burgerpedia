@@ -5,6 +5,7 @@ import Home from './components/home.js';
 import Episodes from './components/episodes';
 import Episode from './components/episode';
 import Characters from './components/characters';
+import Character from './components/character';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -18,6 +19,7 @@ root.render(
       <Route path="/episodes" element={<Episodes />}></Route>
       <Route path="/episode/:id" element={<Episode />}></Route>
       <Route path="/characters" element={<Characters />}></Route>
+      <Route path="/character/:id" element={<Character />}></Route>
     </Routes>
     </BrowserRouter>
   

@@ -13,8 +13,9 @@ li{
 
 /*header section */
 #navbar{
+    padding-top: .25em;
     background-color: yellow;
-    border: 5px solid red;
+    border-bottom: 2px solid red;
     color: red;
     font-weight: bold;
    
