@@ -1,0 +1,25 @@
+#character-images{
+    width: 10em;
+    height: 10em;
+}
+
+#characters-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+    margin-top: 3em;
+}
+
+#character-cards{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    align-items: center;
+    width: 12em;
+    height: 15em;
+}
+
+#characters-page{
+    text-align: center;
+}

@@ -4,6 +4,7 @@ import './index.css';
 import Home from './components/home.js';
 import Episodes from './components/episodes';
 import Episode from './components/episode';
+import Characters from './components/characters';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -16,6 +17,7 @@ root.render(
       <Route path="/" element={<Home />}></Route>
       <Route path="/episodes" element={<Episodes />}></Route>
       <Route path="/episode/:id" element={<Episode />}></Route>
+      <Route path="/characters" element={<Characters />}></Route>
     </Routes>
     </BrowserRouter>
   
