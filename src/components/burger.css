@@ -1,0 +1,10 @@
+
+#burger-of-day{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}

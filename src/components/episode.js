@@ -4,12 +4,14 @@ import {useParams, Link } from 'react-router-dom';
 import './episode.css'
 import logo from '../images/burger.png';
 import Navbar from './navbar';
+import Burger from './burger';
 
 export default function Episode(){
     const { id } = useParams();
     const [episodeInfo, setEpisodeInfo] = useState({})
     const [storeNextDoor, setStoreNextDoor] = useState({})
     const [pestControl, setPestControl] = useState({})
+   
 
 
     useEffect(() => {
@@ -30,6 +32,8 @@ export default function Episode(){
         .then(j => setPestControl(j))
     }, [id])
 
+   
+
     
     return(
         <div>
@@ -38,6 +42,8 @@ export default function Episode(){
                 <h1>Bob's Burgerpedia</h1>
             </header>
             <Navbar />
+
+            <Burger />
             <div id="episode-info">
                 <h2>{episodeInfo.name}</h2>
                 <p>Season: {episodeInfo.season} Episode: {episodeInfo.episode}</p>
@@ -45,6 +51,7 @@ export default function Episode(){
                 <p>Total Viewers: {episodeInfo.totalViewers}</p>
                 <Link to={episodeInfo.episodeUrl} target="_blank"><p>Read about this episode!</p></Link>
             
+    
                 <div id="pictures">
                     <div id="next-door-section">
                         <p>The Store Next Door:</p>

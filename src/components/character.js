@@ -1,9 +1,10 @@
 import {React, useEffect, useState } from 'react';
-import {useParams, Link } from 'react-router-dom';
+import {useParams } from 'react-router-dom';
 
 import './character.css';
 import logo from '../images/burger.png';
 import Navbar from './navbar';
+import Burger from './burger'
 
 export default function Character(){
     const { id } = useParams()
@@ -39,6 +40,7 @@ export default function Character(){
                 <h1>Bob's Burgerpedia</h1>
             </header>
             <Navbar />
+            <Burger />
             <div id="character-page">
                 <h2>{character.name}</h2>
                 <img src={character.image} alt={character.name} id="character-pic"/>

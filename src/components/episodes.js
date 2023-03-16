@@ -4,6 +4,7 @@
 import './episodes.css';
 import logo from '../images/burger.png';
 import Navbar from './navbar';
+import Burger from './burger'
 
 
 export default function Episodes(){
@@ -32,6 +33,7 @@ const seasonList = episodes?.map(j =>
                 <h1>Bob's Burgerpedia</h1>
             </header>
             <Navbar />
+            <Burger />
             <p>Filter by Season:</p>
             <select value={season} onChange={e => setSeason(e.target.value)}>
                 <option>all</option>

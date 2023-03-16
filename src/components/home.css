@@ -1,6 +1,7 @@
 /*Global Styles */
 .App {
   text-align: center;
+ 
 }
 
 /* Header */
@@ -23,6 +24,20 @@ header img{
 #banner{
   width: 100%;
   height: 75%;
+}
+
+#home-page{
+  margin-right: 1em;
+ 
+}
+#burger-of-day{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
 }
 
 

@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import './characters.css';
 import logo from '../images/burger.png';
 import Navbar from './navbar';
+import Burger from './burger'
 
 
 export default function Characters() {
@@ -30,6 +31,7 @@ export default function Characters() {
                 <h1>Bob's Burgerpedia</h1>
             </header>
             <Navbar />
+            <Burger />
             <h2>Characters:</h2>
             <div id="characters-section">
                 {characterList}
