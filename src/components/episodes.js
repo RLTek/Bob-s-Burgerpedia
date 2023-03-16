@@ -18,11 +18,11 @@ useEffect(() => {
 
 
 const episodeList = episodes?.map(episode => <div key={episode.id}>
-    <Link to="/episode"><p>{episode.name}</p></Link>
+    <Link to={`/episode/${episode.id}`}><p>{episode.name}</p></Link>
 </div>)
 
 const seasonList = episodes?.map(j => 
-    j.season.toString() === season ? <div key={j.id} id="season-list"><Link to="/episode"><p>{j.name}</p></Link></div> : ""
+    j.season.toString() === season ? <div key={j.id} id="season-list"><Link to={`/episode/${j.id}`}><p>{j.name}</p></Link></div> : ""
 )
 
     return(

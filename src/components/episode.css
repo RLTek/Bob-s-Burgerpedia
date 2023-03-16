@@ -1,3 +1,19 @@
 #episode-info{
     text-align: center;
+   
+}
+
+#next-door{
+    width: 20em;
+    
+}
+
+#pest-control{
+    width: 20em;
+}
+
+#pictures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
