@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className="App">
       <header>
-        <img src={logo} alt="burger"/>
+        <img src={logo} alt="burger" id="burger"/>
         <h1>Bob's Burgerpedia</h1>
       </header>
       <Navbar />

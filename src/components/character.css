@@ -2,7 +2,25 @@
     text-align: center;
 }
 
-img{
+#character-pic{
     width: 10em;
     height: 10em;
+}
+
+#character-info{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 1.25em;
+
+}
+
+#relatives{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-right: 1em;
 }

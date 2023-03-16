@@ -8,13 +8,21 @@ header{
   display: flex;
   gap: 2em;
   justify-content: center;
+  align-items: center;
   color: red;
   text-shadow: -2px 1px 0 black, 2px -1px 0 black,  -2px -1px 0 black,  2px 1px 0 black;
 }
 
+header img{
+  width: 5em;
+  height: 5em;
+  margin-left: 1em;
+}
 
 /* Banner picture */
 #banner{
   width: 100%;
   height: 75%;
 }
+
+
