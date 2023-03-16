@@ -1,0 +1,21 @@
+/* Global Styles */
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 1em;
+}
+
+
+li{
+    list-style: none;
+
+}
+
+/*header section */
+#navbar{
+    background-color: yellow;
+    border: 5px solid red;
+    color: red;
+    font-weight: bold;
+   
+}
