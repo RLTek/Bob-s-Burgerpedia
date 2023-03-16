@@ -4,6 +4,7 @@ import  banner from '../images/family-closeup.jpg';
 import logo from '../images/burger.png';
 import Navbar from './navbar';
 
+
 function Home() {
   return (
     <div className="App">

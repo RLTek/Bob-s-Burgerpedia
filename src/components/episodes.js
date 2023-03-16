@@ -1,4 +1,5 @@
  import {React, useEffect, useState } from 'react';
+ import {Link} from 'react-router-dom';
 
 import './episodes.css';
 import logo from '../images/burger.png';
@@ -17,11 +18,11 @@ useEffect(() => {
 
 
 const episodeList = episodes?.map(episode => <div key={episode.id}>
-    <p>{episode.name}</p>
+    <Link to="/episode"><p>{episode.name}</p></Link>
 </div>)
 
 const seasonList = episodes?.map(j => 
-    j.season == season ? <div key={j.id}><p>{j.name}</p></div> : ""
+    j.season.toString() === season ? <div key={j.id} id="season-list"><Link to="/episode"><p>{j.name}</p></Link></div> : ""
 )
 
     return(

@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './components/home.js';
 import Episodes from './components/episodes';
+import Episode from './components/episode';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +15,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Home />}></Route>
       <Route path="/episodes" element={<Episodes />}></Route>
+      <Route path="/episode" element={<Episode />}></Route>
     </Routes>
     </BrowserRouter>
   
