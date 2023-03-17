@@ -1,3 +1,13 @@
+Project Title: Burgerpedia
+
+Description: Information on all of your favorite Bob's Burgers episodes, characters and more!
+
+Features: Find information on your favorite characters or by episode
+
+How to use: From the home page you can view the burger of the day and navigate to either characters or episodes. On the episodes page you can filter episodes by season and click on an episode to enter the episode page and get information about that episode. On the characters page you can filter the characters by typing in the search box and then click a character to be brought to the character page for info about that character.
+
+Technologies: React, react router, bobsburgersapi.com, html, css, javascript
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
