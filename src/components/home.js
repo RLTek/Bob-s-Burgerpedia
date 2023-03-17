@@ -6,6 +6,8 @@ import Navbar from './navbar';
 import Burger from './burger';
 
 
+
+//Renders the Home page
 function Home() {
 
 

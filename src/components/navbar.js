@@ -4,7 +4,7 @@ import './navbar.css';
 
 export default function Navbar(){
 
-
+//Renders the navbar
     return(
         <nav id="navbar">
             <ul>

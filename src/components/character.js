@@ -11,6 +11,7 @@ export default function Character(){
     const [character, setCharacter] = useState({})
     
 
+//Calls the API to get the character selected
     useEffect(() => {
         fetch(`https://bobsburgers-api.herokuapp.com/characters/${id}`)
         .then(res => res.json())
@@ -21,7 +22,7 @@ export default function Character(){
 
 
    
-
+//Maps through the character's relatives and returns their name and relationship
     const relatives = character.relatives?.map(relative => 
         
         <div key={relative.name}>
@@ -32,7 +33,7 @@ export default function Character(){
         </div>)
 
     
-
+//Renders the Character page
     return(
         <div>
             <header>

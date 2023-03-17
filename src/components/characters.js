@@ -10,13 +10,15 @@ import Burger from './burger'
 export default function Characters() {
     const [characters, setCharacters] = useState([])
 
+
+//Calls the API to get a list of characters
     useEffect(() => {
         fetch('https://bobsburgers-api.herokuapp.com/characters/')
         .then(res => res.json())
         .then(res => setCharacters(res))
     }, [])
 
-
+//Maps through the characters and renders their image and name in a clickable link
     const characterList = characters?.map(character => <div id="character-cards" key={character.id}>
         <Link to={`/character/${character.id}`}>
         <img src={character.image} alt="character" id="character-images"/>
@@ -24,6 +26,7 @@ export default function Characters() {
         </Link>
     </div>)
 
+//renders the Character page
     return(
     <div id="characters-page">
             <header>

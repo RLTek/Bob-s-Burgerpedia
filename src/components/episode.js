@@ -13,19 +13,21 @@ export default function Episode(){
     const [pestControl, setPestControl] = useState({})
    
 
-
+//Calls the API to get info on the episode selected
     useEffect(() => {
         fetch(`https://bobsburgers-api.herokuapp.com/episodes/${id}`)
         .then(res => res.json())
         .then(res => setEpisodeInfo(res))
     }, [id])
 
+//Calls API to get the store next door picture from the selected episode
     useEffect(() => {
         fetch(`https://bobsburgers-api.herokuapp.com/storeNextDoor/${id}`)
         .then(i => i.json())
         .then(i => setStoreNextDoor(i))
     }, [id])
 
+//calls the API to get the picture for the pest control truck from the selected episode
     useEffect(() => {
         fetch(`https://bobsburgers-api.herokuapp.com/pestControlTruck/${id}`)
         .then(j => j.json())
@@ -34,7 +36,7 @@ export default function Episode(){
 
    
 
-    
+//Renders the Episode page
     return(
         <div>
             <header>
