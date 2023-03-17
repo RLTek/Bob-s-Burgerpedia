@@ -1,5 +1,5 @@
 import {React, useEffect, useState } from 'react';
-import {useParams } from 'react-router-dom';
+import {useParams, Link} from 'react-router-dom';
 
 import './character.css';
 import logo from '../images/burger.png';
@@ -51,7 +51,7 @@ export default function Character(){
                     <p><b>First Episode:</b> {character.firstEpisode}</p>
                     <p><b>Voiced By:</b> {character.voicedBy}</p>
                 </div>
-
+                <Link to={character?.wikiUrl} target="_blank"><h3>Read about {character.name}</h3></Link>
                 <h2>Relatives:</h2>
                 <div id="relatives">
                     {relatives?.length > 0 ? relatives : "None"}
