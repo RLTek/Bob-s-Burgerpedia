@@ -29,7 +29,7 @@ export default function Characters() {
     </div>)
 
 //Filters and maps through the list of characters based on user search
-    const filteredCharacterList = characters?.filter(c => c.name.includes(search) || '').map(character => <div id="character-cards" key={character.id}>
+    const filteredCharacterList = characters?.filter(c => c.name.toLowerCase()?.includes(search) || '').map(character => <div id="character-cards" key={character.id}>
     <Link to={`/character/${character.id}`}>
     <img src={character.image} alt="character" id="character-images"/>
     <p>{character.name}</p>
@@ -46,8 +46,7 @@ export default function Characters() {
             <Navbar />
             <Burger />
             <h3>Search for your favorite character!</h3>
-            <input type="text" value={search} onChange={e => setSearch(e.target.value)}/>
-            <p>Names are case sensitive!</p>
+            <input type="text" value={search} onChange={e => setSearch(e.target.value.toLowerCase())}/>
             <h2>Characters:</h2>
             <div id="characters-section">
                 {search === '' ? characterList : filteredCharacterList}
